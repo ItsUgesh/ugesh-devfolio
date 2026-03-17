@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "Abstract coding background",
+      "imageUrl": "https://picsum.photos/seed/1/600/400",
+      "imageHint": "web development"
+    },
+    {
+      "id": "project-2",
+      "description": "Modern office with computers",
+      "imageUrl": "https://picsum.photos/seed/2/600/400",
+      "imageHint": "corporate website"
+    },
+    {
+      "id": "project-3",
+      "description": "E-commerce shopping cart interface",
+      "imageUrl": "https://picsum.photos/seed/3/600/400",
+      "imageHint": "online store"
+    },
+    {
+      "id": "project-4",
+      "description": "Analytics dashboard on a screen",
+      "imageUrl": "https://picsum.photos/seed/4/600/400",
+      "imageHint": "data dashboard"
+    },
+    {
+      "id": "project-5",
+      "description": "Mobile app interface design",
+      "imageUrl": "https://picsum.photos/seed/5/600/400",
+      "imageHint": "mobile application"
+    },
+    {
+      "id": "project-6",
+      "description": "Person writing in a notebook",
+      "imageUrl": "https://picsum.photos/seed/6/600/400",
+      "imageHint": "blog platform"
+    }
+  ]
 }
