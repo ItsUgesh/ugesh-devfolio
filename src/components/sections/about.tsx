@@ -10,7 +10,7 @@ const About = () => {
         <div className="lg:col-span-2 flex justify-center">
           <Card className="rounded-full w-64 h-64 md:w-80 md:h-80 overflow-hidden border-4 border-primary/20 shadow-lg">
             <Image
-              src="/photos/ugesh.jpg"
+              src="/photos/Ugesh.jpg"
               width={400}
               height={400}
               alt="Ugesh"
