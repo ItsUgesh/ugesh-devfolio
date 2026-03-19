@@ -5,12 +5,13 @@ import { projects, type Project } from '@/lib/data';
 import ProjectCard from '@/components/project-card';
 import { Button } from '@/components/ui/button';
 
-type Category = 'all' | 'laravel' | 'wordpress' | 'other';
+type Category = 'all' | 'laravel' | 'wordpress' |'python'| 'other';
 
 const categories: { name: string, value: Category }[] = [
   { name: 'All', value: 'all' },
   { name: 'Laravel', value: 'laravel' },
   { name: 'WordPress', value: 'wordpress' },
+  { name: 'python', value: 'python' },
   { name: 'Other', value: 'other' },
 ];
 
@@ -26,7 +27,7 @@ const Projects = () => {
       <div className="text-center">
         <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">My Work</h2>
         <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-          A selection of projects I've worked on.
+          A selection of projects I've done.
         </p>
       </div>
 

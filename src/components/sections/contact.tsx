@@ -8,24 +8,34 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Instagram, Linkedin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 
 const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
+    name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+    email: z.string().email({ message: "Please enter a valid email address." }),
+    message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });
 
 type ContactFormValues = z.infer<typeof formSchema>;
 
 async function handleSubmit(data: ContactFormValues) {
-    // In a real app, you'd send this to a server endpoint.
-    // For this example, we'll just log it and show a toast.
-    console.log('Contact form submitted:', data);
-    return { success: true };
-}
+    try {
+        const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        });
 
+        return await res.json();
+
+    } catch (error) {
+        console.error("Error:", error);
+        return { success: false };
+    }
+}
 const Contact = () => {
     const { toast } = useToast();
     const form = useForm<ContactFormValues>({
@@ -36,7 +46,7 @@ const Contact = () => {
             message: "",
         },
     });
-    
+
     const { formState: { isSubmitting } } = form;
 
     const onSubmit = async (values: ContactFormValues) => {
@@ -119,18 +129,21 @@ const Contact = () => {
                     <Card>
                         <CardHeader><CardTitle>Contact Details</CardTitle></CardHeader>
                         <CardContent className="space-y-4">
-                            <p className='text-foreground/80'><strong>Email:</strong><br /> ugesh@example.com</p>
-                            <p className='text-foreground/80'><strong>Location:</strong><br /> Nepal</p>
+                            <p className='text-foreground/80'><strong>Email:</strong><br /> ugeshsimkhada@gmail.com</p>
+                            <p className='text-foreground/80'><strong>Contact No.:</strong><br /> 9819160244</p>
                         </CardContent>
                     </Card>
                     <Card>
                         <CardHeader><CardTitle>Follow Me</CardTitle></CardHeader>
                         <CardContent className="flex space-x-4">
                             <Button asChild variant="outline" size="icon">
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Github /></a>
+                                <a href="https://github.com/ItsUgesh" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Github /></a>
                             </Button>
                             <Button asChild variant="outline" size="icon">
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin /></a>
+                                <a href="https://www.linkedin.com/in/ugesh-simkhada-914977230" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin /></a>
+                            </Button>
+                            <Button asChild variant="outline" size="icon">
+                                <a href="https://www.instagram.com/ugesh_tzfe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Instagram /></a>
                             </Button>
                         </CardContent>
                     </Card>

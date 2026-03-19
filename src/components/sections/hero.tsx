@@ -17,7 +17,7 @@ const Hero = () => {
         </ScrollReveal>
         <ScrollReveal delay={200}>
           <p className="mt-4 font-headline text-2xl md:text-3xl text-foreground/80">
-            A Full Stack Web Developer from Nepal
+            A Full Stack Web Developer
           </p>
         </ScrollReveal>
         <ScrollReveal delay={400}>
