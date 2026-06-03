@@ -3,10 +3,10 @@ import TechIcon from '@/components/tech-icon';
 import { Separator } from '@/components/ui/separator';
 
 const skills = {
-  backend: ["Laravel", "PHP", "MySQL"],
-  frontend: ["HTML", "CSS", "JavaScript"],
-  cms: ["WordPress", "Elementor", "ACF"],
-  tools: ["Git", "Figma", "REST APIs"],
+  frontend: ["HTML", "CSS", "JavaScript", "TypeScript"],
+  backend: ["PHP", "MySQL", "Firebase", "Next.js"],
+  cms: ["WordPress", "Elementor", "ACF", "WooCommerce"],
+  tools: ["Git", "Figma", "REST APIs", "VS Code"],
 };
 
 const Skills = () => {

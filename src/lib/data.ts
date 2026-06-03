@@ -5,17 +5,53 @@ export type Project = {
   imageUrl: string;
   imageHint: string;
   liveUrl: string;
-  category: 'all' | 'laravel' | 'wordpress' | 'python' | 'other';
+  category: 'all' | 'wordpress'| 'figma' | 'python' | 'other';
 };
 
 export const projects: Project[] = [
   {
-    title: 'Manaslu Expert',
-    description: 'A full-featured travel website with a custom admin panel, built using wordpress and elementer.',
-    tech: ['Wordpress', 'Elementor', 'ACF', 'MySQL'],
-    imageUrl: '/photos/ManasluExpert.jpeg',
-    imageHint: "travel website",
-    liveUrl: 'https://manasluexpert.com/',
+    title: 'OrderFlow — POS System',
+    description: 'A full-featured Restaurant POS and Management System. This is a demo of the same system actively used by a real café in production. Handles orders, menu management, staff accounts, and daily sales reporting with separate admin and staff dashboards.',
+    tech: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS'],
+    imageUrl: '/photos/orderflow.png',
+    imageHint: "restaurant pos system",
+    liveUrl: 'https://order-flow-red.vercel.app',
+    category: 'other',
+  },
+  {
+  title: 'ShopNepal — E-Commerce',
+    description: 'A WooCommerce e-commerce store built from scratch using WordPress, Elementor and ACF with custom post types and product management.',
+    tech: ['WordPress', 'WooCommerce', 'Elementor', 'ACF'],
+    imageUrl: '/photos/shopnepal.png',
+    imageHint: "ecommerce website nepal",
+    liveUrl: 'http://shopnepal.infinityfreeapp.com/?i=1',
+    category: 'wordpress',
+  },
+  {
+    title: 'Himalark — Travel Website UI/UX',
+    description: 'Full UI/UX design process for a travel website. Includes wireframes, final UI with 9+ pages, tablet responsive layouts, and a complete design system.',
+    tech: ['Figma', 'UI Design', 'UX Design', 'Prototyping'],
+    imageUrl: '/photos/himalark.png',
+    imageHint: "travel website design figma",
+    liveUrl: 'https://www.figma.com/design/3fvOmeCUhnzZAxbqXQ1YYO/Himalark?node-id=285-83&t=8ydpfe3uD1LJgsLv-1',
+    category: 'figma',
+  },
+  {
+    title: 'UI/UX Design Collection',
+    description: 'A collection of web designs including landing pages, gym website, portfolio site and travel concepts. Showcases UI skills across different industries.',
+    tech: ['Figma', 'UI Design', 'Wireframing'],
+    imageUrl: '/photos/FigmaDesign.png',
+    imageHint: "ui ux design collection",
+    liveUrl: 'https://www.figma.com/design/rJszWIc93M2J5ZW43ljqZ9/UI-UX-portfolio',
+    category: 'figma',
+  },
+  {
+    title: 'Freelance WordPress Projects',
+    description: 'Built and customized WordPress websites for clients in Nepal including travel and logistics industries. Handled theme customization, ACF setup, and site maintenance.',
+    tech: ['WordPress', 'PHP', 'Elementor', 'ACF'],
+    imageUrl: '/photos/freelance.jpg',
+    imageHint: "wordpress website development",
+    liveUrl: '#',
     category: 'wordpress',
   },
   {
@@ -27,44 +63,12 @@ export const projects: Project[] = [
     liveUrl: 'https://github.com/ItsUgesh/Luxy-Voice-Assistant-AI',
     category: 'python',
   },
-  {
-    title: 'Cargo Website',
-    description: 'A dynamic cargo management platform built with WordPress, featuring integrated tracking systems and streamlined logistics tools for efficient shipment handling.',
-    tech: ['Wordpress', 'CSS', 'ACF', 'MySQL'],
-    imageUrl: '/photos/cargo.jpg',
-    imageHint: "cargo website",
-    liveUrl: 'https://reliablecargo.com.np/',
-    category: 'wordpress',
-  },
-  {
-    title: 'E-commerce Site',
-    description: 'A WordPress-based e-commerce website with a user-friendly interface, secure checkout, and efficient product management system.',
-    tech: ['PHP', 'Wordpress', 'MySQL', 'Woo-Commerce'],
-    imageUrl: '/photos/Ecommerce.jpg',
-    imageHint: "E-commerce website",
-    liveUrl: 'https://github.com/ItsUgesh/ShopNepal-E-commerce',
-    category: 'wordpress',
-  },
-  {
-    title: 'FunnyNepal Travel',
-    description: 'A custom-coded WordPress website built with PHP for Funny Nepal Travels, featuring travel package listings and a seamless user experience.',
-    tech: ['MySQL', 'CSS', 'PHP', 'JavaScript'],
-    imageUrl: '/photos/TravelSite.jpg',
-    imageHint: "creative portfolio",
-    liveUrl: 'https://github.com/ItsUgesh/Funny-Nepal-Travel-and-Tours',
-    category: 'other',
-  },
-  {
-    title: 'Figma design',
-    description: 'A modern landing page design created in Figma, focused on clean layout, intuitive navigation, and a visually engaging user experience.',
-    tech: ['Figma'],
-    imageUrl: '/photos/FigmaDesign.png',
-    imageHint: "figma dsign",
-    liveUrl: 'https://www.figma.com/proto/JuOa2PPdI8kKlOMLBQf0Ky/LANDING-PAGE-JUICE-?node-id=1-2&p=f&t=FJxsKTA8SAZpfeu4-1&scaling=contain&content-scaling=fixed&page-id=0%3A1',
-    category: 'other',
-  },
 ];
 
 export const services = [
-  'Web Development', 'WordPress Development', 'Website Optimization', 'Custom Web Solutions'
+  'Problem Solving',
+  'Clean Code', 
+  'Full Stack Thinking',
+  'Fast Learner',
 ];
+

@@ -71,7 +71,7 @@ const Contact = () => {
             <div className="text-center">
                 <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
                 <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-                    Have a project in mind or just want to say hi? I'd love to hear from you.
+                    Open to Werkstudent and part-time web developer roles in Berlin. Feel free to reach out!
                 </p>
             </div>
 
@@ -129,8 +129,8 @@ const Contact = () => {
                     <Card>
                         <CardHeader><CardTitle>Contact Details</CardTitle></CardHeader>
                         <CardContent className="space-y-4">
-                            <p className='text-foreground/80'><strong>Email:</strong><br /> ugeshsimkhada@gmail.com</p>
-                            <p className='text-foreground/80'><strong>Contact No.:</strong><br /> 9819160244</p>
+                            <p className='text-foreground/80'><strong>Email:</strong><br /> Ugeshsimkhada@gmail.com</p>
+                            <p className='text-foreground/80'><strong>Contact Number:</strong><br /> +49 15510367148</p>
                         </CardContent>
                     </Card>
                     <Card>

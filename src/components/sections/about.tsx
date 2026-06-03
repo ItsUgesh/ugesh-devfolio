@@ -13,7 +13,7 @@ const About = () => {
               src="/photos/Ugesh.jpg"
               width={400}
               height={400}
-              alt="Ugesh"
+              alt="Ugesh simkhada"
               className="object-cover w-full h-full"
               data-ai-hint="professional developer portrait"
             />
@@ -23,12 +23,19 @@ const About = () => {
           <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">
             About Me
           </h2>
+          <p className="text-foreground/80 text-lg mb-4 leading-relaxed">
+            Hi, I'm Ugesh. A web developer based in Berlin with a passion for building clean, functional web solutions.
+          </p>
+          <p className="text-foreground/80 text-lg mb-4 leading-relaxed">
+            I specialise in WordPress, PHP, and modern JavaScript (Next.js), developing everything from custom e-commerce platforms to full-stack web applications. One of my recent projects i.e a POS system I built is actively being used by a real café in production.
+          </p>
+          <p className="text-foreground/80 text-lg mb-4 leading-relaxed">
+            I also have experience with UI/UX design in Figma and integrating backend services like Firebase. My focus is always on writing clean, maintainable code that solves real problems and delivers real value.
+          </p>
           <p className="text-foreground/80 text-lg mb-6 leading-relaxed">
-            I'm Ugesh, a passionate web developer with a focus on building elegant and efficient web solutions. With a strong background in Laravel, PHP, and WordPress, I develop custom websites, dynamic applications, and scalable e-commerce platforms.
+            Currently pursuing a Master's in Data Science in Berlin while actively building and shipping projects.
           </p>
-          <p className="text-foreground/80 text-lg mb-8 leading-relaxed">
-            I also have experience integrating AI-powered features into projects, adding smarter functionality and enhancing user experience. My focus is on writing clean, scalable code and using modern tools to deliver high-performance applications that create real value. I'm always eager to learn new technologies and take on challenging projects.
-          </p>
+
           <Button asChild size="lg">
             <a href="files/cv.pdf" download>
               <Download className="mr-2 h-5 w-5" />

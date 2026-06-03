@@ -5,11 +5,11 @@ import { projects, type Project } from '@/lib/data';
 import ProjectCard from '@/components/project-card';
 import { Button } from '@/components/ui/button';
 
-type Category = 'all' | 'laravel' | 'wordpress' |'python'| 'other';
+type Category = 'all' | 'wordpress' | 'figma' |'python'| 'other';
 
 const categories: { name: string, value: Category }[] = [
   { name: 'All', value: 'all' },
-  { name: 'Laravel', value: 'laravel' },
+  { name: 'Figma', value: 'figma' },
   { name: 'WordPress', value: 'wordpress' },
   { name: 'python', value: 'python' },
   { name: 'Other', value: 'other' },

@@ -22,7 +22,7 @@ const Hero = () => {
         </ScrollReveal>
         <ScrollReveal delay={400}>
           <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-foreground/60">
-            I build fast, scalable, and user-focused web solutions.
+            I build fast, reliable web experiences, from WordPress sites to modern web apps.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={600}>

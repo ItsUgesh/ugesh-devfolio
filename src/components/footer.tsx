@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="border-t">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row justify-between items-center gap-4">
                 <p className="text-sm text-foreground/60 text-center sm:text-left">
-                    &copy; {currentYear} Ugesh. All rights reserved. 2026
+                    &copy; {currentYear} Ugesh. All rights reserved.
                 </p>
                 <div className="flex items-center gap-2">
                     <Button asChild variant="ghost" size="icon">
