@@ -3,7 +3,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import type { Project } from '@/lib/data';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';;
 import { ScrollReveal } from './scroll-reveal';
 
 const ProjectCard = ({ project, index }: { project: Project, index: number }) => {
@@ -30,12 +30,21 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
             ))}
           </div>
         </CardContent>
-        <CardFooter>
-          <Button asChild variant="outline" className="w-full">
-            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-              Live Demo <ExternalLink className="ml-2 h-4 w-4" />
-            </a>
-          </Button>
+        <CardFooter className="flex gap-2">
+          {project.liveUrl && (
+            <Button asChild variant="outline" className="w-full">
+              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                Live Demo <ExternalLink className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          )}
+          {project.githubUrl && (
+            <Button asChild variant="outline" className="w-full">
+              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                View Code <Github className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          )}
         </CardFooter>
       </Card>
     </ScrollReveal>

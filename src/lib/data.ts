@@ -4,7 +4,8 @@ export type Project = {
   tech: string[];
   imageUrl: string;
   imageHint: string;
-  liveUrl: string;
+  liveUrl?: string;
+  githubUrl?: string;
   category: 'all' | 'wordpress'| 'figma' | 'python' | 'other';
 };
 
@@ -16,6 +17,7 @@ export const projects: Project[] = [
     imageUrl: '/photos/orderflow.png',
     imageHint: "restaurant pos system",
     liveUrl: 'https://order-flow-red.vercel.app',
+    githubUrl: 'https://github.com/ItsUgesh/Order-Flow',
     category: 'other',
   },
   {
@@ -45,22 +47,23 @@ export const projects: Project[] = [
     liveUrl: 'https://www.figma.com/design/rJszWIc93M2J5ZW43ljqZ9/UI-UX-portfolio',
     category: 'figma',
   },
-  {
-    title: 'Freelance WordPress Projects',
-    description: 'Built and customized WordPress websites for clients in Nepal including travel and logistics industries. Handled theme customization, ACF setup, and site maintenance.',
-    tech: ['WordPress', 'PHP', 'Elementor', 'ACF'],
-    imageUrl: '/photos/freelance.jpg',
-    imageHint: "wordpress website development",
-    liveUrl: '#',
-    category: 'wordpress',
-  },
+{
+  title: 'Personal Portfolio',
+  description: 'My personal portfolio website built with Next.js, TypeScript and Tailwind CSS. Features smooth animations, project showcase, and responsive design.',
+  tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+  imageUrl: '/photos/freelance.jpg',
+  imageHint: "portfolio website",
+  liveUrl: 'https://www.ugeshsimkhada.com.np',
+  githubUrl: 'https://github.com/ItsUgesh/ugesh-devfolio',
+  category: 'other',
+},
   {
     title: 'AI powered Voice assistant',
     description: 'It is a Python-based voice assistant that can fetch news, play music, open websites, and answer questions using AI.',
     tech: ['python', 'SpeechRecognition', 'OpenAI API'],
     imageUrl: '/photos/AI powered Voice assistant.png',
     imageHint: "corporate website",
-    liveUrl: 'https://github.com/ItsUgesh/Luxy-Voice-Assistant-AI',
+    githubUrl: 'https://github.com/ItsUgesh/Luxy-Voice-Assistant-AI',
     category: 'python',
   },
 ];

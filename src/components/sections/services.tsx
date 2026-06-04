@@ -5,7 +5,7 @@ const serviceData = [
   {
     icon: <Lightbulb className="h-12 w-12 text-primary" />,
     title: "Problem Solving",
-    description: "I build practical solutions that work in real environments — including a POS system actively used by a café in production."
+    description: "I build practical solutions that work in real environments including a POS system actively used by a café in production."
   },
   {
     icon: <Code2 className="h-12 w-12 text-primary" />,
@@ -15,7 +15,7 @@ const serviceData = [
   {
     icon: <Layers className="h-12 w-12 text-primary" />,
     title: "Full Stack Thinking",
-    description: "From database to UI, I understand the whole picture — whether it's WordPress, PHP, or a Next.js app with Firebase."
+    description: "From database to UI, I understand the whole picture whether it's WordPress, PHP, or a Next.js app with Firebase."
   },
   {
     icon: <Rocket className="h-12 w-12 text-primary" />,
