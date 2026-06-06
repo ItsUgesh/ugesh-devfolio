@@ -6,6 +6,7 @@ export type Project = {
   imageHint: string;
   liveUrl?: string;
   githubUrl?: string;
+  buttonLabel?: string;
   category: 'all' | 'wordpress'| 'figma' | 'python' | 'other';
 };
 
@@ -35,6 +36,7 @@ export const projects: Project[] = [
     tech: ['Figma', 'UI Design', 'UX Design', 'Prototyping'],
     imageUrl: '/photos/himalark.png',
     imageHint: "travel website design figma",
+    buttonLabel: 'View Design',
     liveUrl: 'https://www.figma.com/design/3fvOmeCUhnzZAxbqXQ1YYO/Himalark?node-id=285-83&t=8ydpfe3uD1LJgsLv-1',
     category: 'figma',
   },
@@ -44,6 +46,7 @@ export const projects: Project[] = [
     tech: ['Figma', 'UI Design', 'Wireframing'],
     imageUrl: '/photos/FigmaDesign.png',
     imageHint: "ui ux design collection",
+    buttonLabel: 'View Design',
     liveUrl: 'https://www.figma.com/design/rJszWIc93M2J5ZW43ljqZ9/UI-UX-portfolio',
     category: 'figma',
   },
@@ -51,7 +54,7 @@ export const projects: Project[] = [
   title: 'Personal Portfolio',
   description: 'My personal portfolio website built with Next.js, TypeScript and Tailwind CSS. Features smooth animations, project showcase, and responsive design.',
   tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-  imageUrl: '/photos/freelance.jpg',
+  imageUrl: '/photos/portfolio.png',
   imageHint: "portfolio website",
   liveUrl: 'https://www.ugeshsimkhada.com.np',
   githubUrl: 'https://github.com/ItsUgesh/ugesh-devfolio',
@@ -59,8 +62,8 @@ export const projects: Project[] = [
 },
   {
     title: 'AI powered Voice assistant',
-    description: 'It is a Python-based voice assistant that can fetch news, play music, open websites, and answer questions using AI.',
-    tech: ['python', 'SpeechRecognition', 'OpenAI API'],
+    description: 'A Python-based voice assistant that can fetch news, play music, open websites, and answer questions using OpenAI GPT.',
+    tech: ['Python', 'SpeechRecognition', 'OpenAI API'],
     imageUrl: '/photos/AI powered Voice assistant.png',
     imageHint: "corporate website",
     githubUrl: 'https://github.com/ItsUgesh/Luxy-Voice-Assistant-AI',

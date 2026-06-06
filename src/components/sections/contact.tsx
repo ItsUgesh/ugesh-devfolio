@@ -142,9 +142,6 @@ const Contact = () => {
                             <Button asChild variant="outline" size="icon">
                                 <a href="https://www.linkedin.com/in/ugesh-simkhada-914977230" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin /></a>
                             </Button>
-                            <Button asChild variant="outline" size="icon">
-                                <a href="https://www.instagram.com/ugesh_tzfe" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Instagram /></a>
-                            </Button>
                         </CardContent>
                     </Card>
                 </div>

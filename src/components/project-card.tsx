@@ -34,7 +34,7 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
           {project.liveUrl && (
             <Button asChild variant="outline" className="w-full">
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                Live Demo <ExternalLink className="ml-2 h-4 w-4" />
+                {project.buttonLabel || 'Live Demo'} <ExternalLink className="ml-2 h-4 w-4" />
               </a>
             </Button>
           )}
