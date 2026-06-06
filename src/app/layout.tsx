@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: 'Ugesh Simkhada | Web Developer',
   description: "Portfolio of Ugesh Simkhada, a Full Stack Web Developer based in Berlin specializing in WordPress, PHP, and Next.js.",
+    icons: {
+    icon: 'favicon.svg',
+  },
 };
 
 export default function RootLayout({
