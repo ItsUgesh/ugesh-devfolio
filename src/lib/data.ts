@@ -7,7 +7,7 @@ export type Project = {
   liveUrl?: string;
   githubUrl?: string;
   buttonLabel?: string;
-  category: 'all' | 'wordpress'| 'figma' | 'python' | 'other';
+  category: 'all' | 'wordpress' | 'figma' | 'python' | 'other';
 };
 
 export const projects: Project[] = [
@@ -22,13 +22,32 @@ export const projects: Project[] = [
     category: 'other',
   },
   {
-  title: 'ShopNepal — E-Commerce',
+    title: 'Arcline Studio — Custom WordPress Theme',
+    description: 'A custom WordPress theme built entirely from scratch — no page builders, no CSS frameworks. Features custom post types, security hardening, performance optimization and SMTP email integration.',
+    tech: ['WordPress', 'PHP', 'MySQL', 'Vanilla JS', 'CSS'],
+    imageUrl: '/photos/arcline.png',
+    imageHint: "custom wordpress theme agency",
+    liveUrl: 'http://arclinestudio.uk',
+    githubUrl: 'https://github.com/ItsUgesh/arcline-wp-theme',
+    category: 'wordpress',
+  },
+  {
+    title: 'ShopNepal — E-Commerce',
     description: 'A WooCommerce e-commerce store built from scratch using WordPress, Elementor and ACF with custom post types and product management.',
     tech: ['WordPress', 'WooCommerce', 'Elementor', 'ACF'],
     imageUrl: '/photos/shopnepal.png',
     imageHint: "ecommerce website nepal",
     liveUrl: 'http://shopnepal.infinityfreeapp.com/?i=1',
     category: 'wordpress',
+  },
+  {
+    title: 'AI powered Voice assistant',
+    description: 'A Python-based voice assistant that can fetch news, play music, open websites, and answer questions using OpenAI GPT.',
+    tech: ['Python', 'SpeechRecognition', 'OpenAI API'],
+    imageUrl: '/photos/AI powered Voice assistant.png',
+    imageHint: "corporate website",
+    githubUrl: 'https://github.com/ItsUgesh/Luxy-Voice-Assistant-AI',
+    category: 'python',
   },
   {
     title: 'Himalark — Travel Website UI/UX',
@@ -50,30 +69,21 @@ export const projects: Project[] = [
     liveUrl: 'https://www.figma.com/design/rJszWIc93M2J5ZW43ljqZ9/UI-UX-portfolio',
     category: 'figma',
   },
-{
-  title: 'Personal Portfolio',
-  description: 'My personal portfolio website built with Next.js, TypeScript and Tailwind CSS. Features smooth animations, project showcase, and responsive design.',
-  tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-  imageUrl: '/photos/portfolio.png',
-  imageHint: "portfolio website",
-  liveUrl: 'https://www.ugeshsimkhada.com.np',
-  githubUrl: 'https://github.com/ItsUgesh/ugesh-devfolio',
-  category: 'other',
-},
   {
-    title: 'AI powered Voice assistant',
-    description: 'A Python-based voice assistant that can fetch news, play music, open websites, and answer questions using OpenAI GPT.',
-    tech: ['Python', 'SpeechRecognition', 'OpenAI API'],
-    imageUrl: '/photos/AI powered Voice assistant.png',
-    imageHint: "corporate website",
-    githubUrl: 'https://github.com/ItsUgesh/Luxy-Voice-Assistant-AI',
-    category: 'python',
+    title: 'Personal Portfolio',
+    description: 'My personal portfolio website built with Next.js, TypeScript and Tailwind CSS. Features smooth animations, project showcase, and responsive design.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    imageUrl: '/photos/portfolio.png',
+    imageHint: "portfolio website",
+    liveUrl: 'https://www.ugeshsimkhada.com.np',
+    githubUrl: 'https://github.com/ItsUgesh/ugesh-devfolio',
+    category: 'other',
   },
 ];
 
 export const services = [
   'Problem Solving',
-  'Clean Code', 
+  'Clean Code',
   'Full Stack Thinking',
   'Fast Learner',
 ];
