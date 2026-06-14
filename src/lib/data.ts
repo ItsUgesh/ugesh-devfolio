@@ -27,7 +27,7 @@ export const projects: Project[] = [
     tech: ['WordPress', 'PHP', 'MySQL', 'Vanilla JS', 'CSS'],
     imageUrl: '/photos/arcline.png',
     imageHint: "custom wordpress theme agency",
-    liveUrl: 'http://arclinestudio.uk',
+    liveUrl: 'https://arclinestudio.uk',
     githubUrl: 'https://github.com/ItsUgesh/arcline-wp-theme',
     category: 'wordpress',
   },
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     tech: ['WordPress', 'WooCommerce', 'Elementor', 'ACF'],
     imageUrl: '/photos/shopnepal.png',
     imageHint: "ecommerce website nepal",
-    liveUrl: 'http://shopnepal.infinityfreeapp.com/?i=1',
+    liveUrl: 'https://shopnepal.infinityfreeapp.com/',
     category: 'wordpress',
   },
   {
