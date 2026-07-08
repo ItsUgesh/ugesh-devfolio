@@ -5,13 +5,14 @@ import { projects, type Project } from '@/lib/data';
 import ProjectCard from '@/components/project-card';
 import { Button } from '@/components/ui/button';
 
-type Category = 'all' | 'wordpress' | 'figma' |'python'| 'other';
+type Category = 'all' | 'wordpress' | 'figma' |'fullstack' |'python'| 'other';
 
 const categories: { name: string, value: Category }[] = [
   { name: 'All', value: 'all' },
   { name: 'Figma', value: 'figma' },
   { name: 'WordPress', value: 'wordpress' },
   { name: 'python', value: 'python' },
+  { name: 'Full Stack', value: 'fullstack' },
   { name: 'Other', value: 'other' },
 ];
 

@@ -7,10 +7,20 @@ export type Project = {
   liveUrl?: string;
   githubUrl?: string;
   buttonLabel?: string;
-  category: 'all' | 'wordpress' | 'figma' | 'python' | 'other';
+  category: 'all' | 'wordpress' | 'figma' | 'fullstack' | 'python' | 'other';
 };
 
 export const projects: Project[] = [
+  {
+    title: 'NepalWander — Headless WordPress + Next.js',
+   description: 'A headless WordPress travel website for Nepal with an animated hero section, built with Next.js frontend consuming WordPress REST API. Features dynamic routing for destinations, trekking routes and articles.',
+    tech: ['Next.js', 'WordPress', 'GraphQL', 'Tailwind CSS', 'REST API'],
+    imageUrl: '/photos/nepalwander.png',
+    imageHint: "nepal travel website",
+    liveUrl: 'https://nepal-wander-blue.vercel.app',
+    githubUrl: 'https://github.com/ItsUgesh/nepal-wander',
+    category: 'fullstack',
+  },
   {
     title: 'OrderFlow — POS System',
     description: 'A full-featured Restaurant POS and Management System. This is a demo of the same system actively used by a real café in production. Handles orders, menu management, staff accounts, and daily sales reporting with separate admin and staff dashboards.',
