@@ -24,7 +24,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-foreground/80 text-lg mb-4 leading-relaxed">
-           Hi, I'm Ugesh, a web developer based in Berlin building clean, functional solutions across WordPress, PHP and Next.js, including custom WordPress themes built from scratch.
+           Hi, I'm Ugesh Simkhada, a web developer based in Berlin building clean, functional solutions across WordPress, PHP and Next.js, including custom WordPress themes built from scratch.
           </p>
           <p className="text-foreground/80 text-lg mb-4 leading-relaxed">
             One of my recent projects, a POS system is actively used by a real café in production. I also work with Figma for UI/UX design and Firebase for backend integration.
