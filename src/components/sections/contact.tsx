@@ -140,7 +140,7 @@ const Contact = () => {
                                 <a href="https://github.com/ItsUgesh" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Github /></a>
                             </Button>
                             <Button asChild variant="outline" size="icon">
-                                <a href="https://www.linkedin.com/in/ugesh-simkhada-914977230" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin /></a>
+                                <a href="https://www.linkedin.com/in/ugesh-simkhada/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin /></a>
                             </Button>
                         </CardContent>
                     </Card>

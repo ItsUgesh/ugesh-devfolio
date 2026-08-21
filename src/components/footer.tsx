@@ -17,7 +17,7 @@ const Footer = () => {
                         </a>
                     </Button>
                     <Button asChild variant="ghost" size="icon">
-                        <a href="https://www.linkedin.com/in/ugesh-simkhada-914977230" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/ugesh-simkhada" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <Linkedin className="h-5 w-5 text-foreground/60 hover:text-primary transition-colors" />
                         </a>
                     </Button>
