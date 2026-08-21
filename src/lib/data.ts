@@ -12,8 +12,18 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'Centsible — Personal Finance Tracker',
+    description: 'A full-stack personal finance SaaS with real-time income & expense analytics, category donut charts, and a 3-month predictive spending algorithm. Features Google OAuth 2.0, Resend transactional email verification, and full CRUD transaction management.',
+    tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'Recharts'],
+    imageUrl: '/photos/centsible.jpg',
+    imageHint: 'personal finance tracker dashboard',
+    liveUrl: 'https://www.centsible.uk',
+    githubUrl: 'https://github.com/ItsUgesh/centsible',
+    category: 'fullstack',
+  },
+  {
     title: 'NepalWander — Headless WordPress + Next.js',
-   description: 'A headless WordPress travel website for Nepal with an animated hero section, built with Next.js frontend consuming WordPress REST API. Features dynamic routing for destinations, trekking routes and articles.',
+    description: 'A headless WordPress travel website for Nepal with an animated hero section, built with Next.js frontend consuming WordPress REST API. Features dynamic routing for destinations, trekking routes and articles.',
     tech: ['Next.js', 'WordPress', 'GraphQL', 'Tailwind CSS', 'REST API'],
     imageUrl: '/photos/nepalwander.png',
     imageHint: "nepal travel website",
