@@ -17,12 +17,12 @@ const Hero = () => {
         </ScrollReveal>
         <ScrollReveal delay={200}>
           <p className="mt-4 font-headline text-2xl md:text-3xl text-foreground/80">
-            Web Developer | WordPress, Next.js & AI Integration
+            Full-Stack Software Engineer & Data Science Student
           </p>
         </ScrollReveal>
         <ScrollReveal delay={400}>
           <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-foreground/60">
-            From custom WordPress themes to AI-powered apps, I build what works.
+            From Figma wireframes to production SaaS platforms and custom WordPress architectures, I build what works.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={600}>
